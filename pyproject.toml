@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "teleogenic-causal-pddl"
+version = "0.1.0"
+description = "Experimenting with the unified-planning framework"
+authors = ["Zakhar Kogan <36503576+zaharkogan@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "teleogenic_causal_pddl"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+unified-planning = "^1.0.0"
+numpy = "^1.25.2"
+modin = {extras = ["ray"], version = "^0.23.1"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
