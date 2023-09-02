@@ -11,7 +11,7 @@ python = "^3.11"
 numpy = "^1.25.2"
 pandas = "^2.0.3"
 up-social-laws = "^0.1.0"
-unified-planning = "^1.0.0"
+unified-planning = {extras = ["pyperplan"], version = "^1.0.0"}
 
 
 [tool.poetry.group.dev.dependencies]

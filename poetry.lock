@@ -640,6 +640,20 @@ files = [
 diagrams = ["jinja2", "railroad-diagrams"]
 
 [[package]]
+name = "pyperplan"
+version = "2.1"
+description = "A lightweight STRIPS planner written in Python."
+optional = false
+python-versions = ">=3.6"
+files = [
+    {file = "pyperplan-2.1-py2.py3-none-any.whl", hash = "sha256:72e51921e8a17b9c583f96f47e78d78019b8177d7f05e31cddb86928dfd67b99"},
+    {file = "pyperplan-2.1.tar.gz", hash = "sha256:3754d7008d279392a8f0f8aea6da3cd0bdc03613297ddb06e33e0a983c2fbf9e"},
+]
+
+[package.dependencies]
+wheel = "*"
+
+[[package]]
 name = "python-dateutil"
 version = "2.8.2"
 description = "Extensions to the standard Python datetime module"
@@ -882,6 +896,7 @@ files = [
 [package.dependencies]
 networkx = "*"
 pyparsing = "*"
+up-pyperplan = {version = "1.0.0", optional = true, markers = "extra == \"pyperplan\""}
 
 [package.extras]
 aries = ["up-aries (>=0.0.8)"]
@@ -897,6 +912,20 @@ pyperplan = ["up-pyperplan (==1.0.0)"]
 symk = ["up-symk (>=0.0.3)"]
 tamer = ["up-tamer (==1.0.0)"]
 tarski = ["tarski[arithmetic]"]
+
+[[package]]
+name = "up-pyperplan"
+version = "1.0.0"
+description = "up_pyperplan"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "up_pyperplan-1.0.0-py3-none-any.whl", hash = "sha256:cbea847b670ef558eda857a914ffcdf489c544f91c9b8c32f4c494ea7a2188f3"},
+    {file = "up_pyperplan-1.0.0.tar.gz", hash = "sha256:136ca3222ce8ca382ba065e09b1c1ee7668a2159bb6a528f42535befba043a34"},
+]
+
+[package.dependencies]
+pyperplan = "2.1"
 
 [[package]]
 name = "up-social-laws"
@@ -920,7 +949,21 @@ files = [
     {file = "wcwidth-0.2.6.tar.gz", hash = "sha256:a5220780a404dbe3353789870978e472cfe477761f06ee55077256e509b156d0"},
 ]
 
+[[package]]
+name = "wheel"
+version = "0.41.2"
+description = "A built-package format for Python"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "wheel-0.41.2-py3-none-any.whl", hash = "sha256:75909db2664838d015e3d9139004ee16711748a52c8f336b52882266540215d8"},
+    {file = "wheel-0.41.2.tar.gz", hash = "sha256:0c5ac5ff2afb79ac23ab82bab027a0be7b5dbcf2e54dc50efe4bf507de1f7985"},
+]
+
+[package.extras]
+test = ["pytest (>=6.0.0)", "setuptools (>=65)"]
+
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "65dd2442b7e07b817a5e7ded66fd91b5240dd8e9a20ed5e692b7ad9cd7d8bbc1"
+content-hash = "e64b5ea3297b69c7f25dd1cd19601c4d2abebb1561c47b0209019a2c1b118484"
