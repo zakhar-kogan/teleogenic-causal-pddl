@@ -8,10 +8,15 @@ packages = [{include = "teleogenic_causal_pddl"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
-unified-planning = "^1.0.0"
 numpy = "^1.25.2"
-modin = {extras = ["ray"], version = "^0.23.1"}
+pandas = "^2.0.3"
+up-social-laws = "^0.1.0"
+unified-planning = "^1.0.0"
 
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.25.1"
+pandas = "^2.0.3"
 
 [build-system]
 requires = ["poetry-core"]
