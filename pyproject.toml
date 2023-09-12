@@ -13,6 +13,7 @@ pandas = "^2.0.3"
 unified-planning = {git = "https://github.com/aiplan4eu/unified-planning.git"}
 up-social-laws = {git = "https://github.com/aiplan4eu/up-social-laws.git"}
 up-pyperplan = {git = "https://github.com/aiplan4eu/up-pyperplan"}
+up-fast-downward = {git = "https://github.com/aiplan4eu/up-fast-downward.git"}
 
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.25.1"

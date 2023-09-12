@@ -1019,6 +1019,21 @@ reference = "HEAD"
 resolved_reference = "d5e5dcdbd6f5551a7f4a57ce420282dbb55482b9"
 
 [[package]]
+name = "up-fast-downward"
+version = "0.3.0"
+description = "Unified Planning Integration of the Fast Downward planning system"
+optional = false
+python-versions = "*"
+files = []
+develop = false
+
+[package.source]
+type = "git"
+url = "https://github.com/aiplan4eu/up-fast-downward.git"
+reference = "HEAD"
+resolved_reference = "54960c14a1c5f437096b6563297b607cbe5c1a2d"
+
+[[package]]
 name = "up-pyperplan"
 version = "1.0.0.1.dev1"
 description = "up_pyperplan"
@@ -1080,4 +1095,4 @@ test = ["pytest (>=6.0.0)", "setuptools (>=65)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "e4b80990c823b29b71b535d5357518bbbe74b2f16d631dca0d0e4bcff5d5d65a"
+content-hash = "9edbfc8f5ef55b70e1533e1e67d4ff4a5756d930160ce7a65f1c8edc830e8085"
